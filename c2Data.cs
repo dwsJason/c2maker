@@ -123,7 +123,7 @@ namespace c2maker
             // Step by 2
             for (int idx = PaletteOffset; idx < (PaletteOffset + PaletteBytes); idx+=2)
             {
-                if (diffBytes[ idx ] != baseBytes[ idx ])
+                if ((diffBytes[ idx ] != baseBytes[ idx ])||(diffBytes[ idx+1 ] != baseBytes[ idx+1 ]))
                 {
                     // We have a delta, save out the index
                     bytes.Add((byte)(idx & 0xFF));
