@@ -13,7 +13,7 @@ namespace c2maker
         {
             if (3 != args.Length)
             {
-                Console.WriteLine("c2maker - encode c2 files from c1 files");
+                Console.WriteLine("c2maker v1.1 - encode c2 files from c1 files");
                 Console.WriteLine("Usage:");
                 Console.WriteLine("       c2maker <tick> <input>0001 <output>");
                 System.Environment.Exit(0);
